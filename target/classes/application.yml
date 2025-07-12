@@ -1,0 +1,8 @@
+server:
+  port: 8588
+
+spring:
+  application:
+    name: BulkHeadTester
+
+

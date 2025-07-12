@@ -1,0 +1,14 @@
+server:
+  port: 8588
+
+spring:
+  application:
+    name: BulkHeadTester
+
+resilience4j:
+  bulkhead:
+    instances:
+      bulkhead:
+        maxConcurrentCalls: 2
+        maxWaitDuration: 5s
+
