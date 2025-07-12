@@ -253,10 +253,8 @@ internal:
    {
      "card": "1234-5678-9012-3456",
      "amount": 100.0,
-     "description": "Too many VISA concurrent requests. Please try again later."
+     "description": "Too many {$type} concurrent requests. Please try again later."
    }
    ```
 
 ---
-
-**MIT © Ваше Имя**
