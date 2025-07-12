@@ -55,6 +55,18 @@ resilience4j:
       bulkhead:
         maxConcurrentCalls: 2      # макс. одновременных вызовов
         maxWaitDuration: 5s        # время ожидания до fallback
+internal:
+  semaphore:
+    limits:
+      - name: MASTERCARD           # название типа
+        permit: 2                  # сколько запросов допускается в течении времени
+        time-out-ms: 2_000         # время тайм оута
+      - name: VISA
+        permit: 1
+        time-out-ms: 60_000
+      - name: ONLINE
+        permit: 4
+        time-out-ms: 30_000
 ```
 
 ### Код
