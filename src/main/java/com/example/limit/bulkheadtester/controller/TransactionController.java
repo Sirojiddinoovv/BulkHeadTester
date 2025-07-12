@@ -1,10 +1,10 @@
-package com.example.bulkheadtester.controller;
+package com.example.limit.bulkheadtester.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import com.example.bulkheadtester.dto.TransactionRequestDTO;
-import com.example.bulkheadtester.dto.TransactionResponseDTO;
-import com.example.bulkheadtester.service.TransactionService;
+import com.example.limit.dto.TransactionRequestDTO;
+import com.example.limit.dto.TransactionResponseDTO;
+import com.example.limit.bulkheadtester.service.TransactionService;
 
 @RestController
 @RequestMapping("/transactions")

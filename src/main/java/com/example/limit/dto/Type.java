@@ -1,4 +1,4 @@
-package com.example.bulkheadtester.dto;
+package com.example.limit.dto;
 
 public enum Type {
     MASTERCARD, VISA, ONLINE

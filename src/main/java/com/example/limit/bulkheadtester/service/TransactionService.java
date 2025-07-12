@@ -1,4 +1,4 @@
-package com.example.bulkheadtester.service;
+package com.example.limit.bulkheadtester.service;
 
 import java.util.Random;
 
@@ -6,8 +6,8 @@ import io.github.resilience4j.bulkhead.annotation.Bulkhead;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import com.example.bulkheadtester.dto.TransactionRequestDTO;
-import com.example.bulkheadtester.dto.TransactionResponseDTO;
+import com.example.limit.dto.TransactionRequestDTO;
+import com.example.limit.dto.TransactionResponseDTO;
 
 @Service
 @Slf4j

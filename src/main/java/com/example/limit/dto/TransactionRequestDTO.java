@@ -1,4 +1,4 @@
-package com.example.bulkheadtester.dto;
+package com.example.limit.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,8 +7,8 @@ import lombok.AllArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TransactionResponseDTO {
+public class TransactionRequestDTO {
     private String card;
-    private double amount;
-    private String description;
+    private Double amount;
+    private Type type;
 }
